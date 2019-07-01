@@ -116,6 +116,9 @@ ul li {
     position: relative;
     height: 100vh;
 }
+.we-left {
+    position: relative;
+}
 .we-left p {
     font-size: 18px;
     color: var(--text-mute);
@@ -131,6 +134,9 @@ ul li {
     margin-top: 0px;
     transition: .2s;
 }
+.app__btn:hover {
+    text-decoration: none;
+}
 .we-left .want-site {
     background: var(--carbone);
     color: #fff;
@@ -145,13 +151,13 @@ ul li {
 .we-left .want-site:hover,
 .link-brief:hover {
     /* background: var(--alum);
-    color: var(--carbone);
-     */
-    text-decoration: none;
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: var(--carbone); */
+    
+    background-color: var(--rainy);
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    box-shadow: 0px 15px 20px rgba(49, 94, 251, 0.2);
     color: #fff;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 .nav-top .nav-item .nav-link {
     font-size: 15px;
@@ -181,11 +187,18 @@ ul li {
 .nav-top .nav-item .nav-link:hover:after {
     transform: scale(1);
 }
-.social-media {
+.social-media,
+.email-media {
     position: absolute;
+    z-index: 999;
+}
+.social-media,
+.email-media{
     bottom: 50px;
     /* transform: translateY(-25%); */
-    z-index: 999;
+}
+.email-media {
+    right: 0;
 }
 .social-media ul li {
     list-style: none;
@@ -213,15 +226,60 @@ ul li {
     height: 100%;
     background: rgba(0, 0, 0, .6);
 }
-.we-ip:before {
-    content: '';
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
-    width: 500px;
-    height: 450px;
-    background: url(../img/betterfly-lebanon-digital-marketing-agency.png) no-repeat;
+.we-ips {
+    position: relative;
+    min-width: 350px;
+    min-height: 350px;
+}
+.we-ip {
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    opacity: .4;
+}
+.we-ip[data-id="1"] {
+    background: url(../img/p_r_web.svg) no-repeat; 
     background-size: cover;
+    animation: jumpper 2s infinite;
+}
+.we-ip[data-id="2"] {
+    background: url(../img/p_r_shop.svg) no-repeat; 
+    background-size: cover;
+    min-width: 170px;
+    min-height: 170px;
+    animation: jumpper 3s infinite;
+}
+.we-ip[data-id="3"] {
+    background: url(../img/p_r_stat.svg) no-repeat; 
+    background-size: cover;
+    animation: jumpper 4s infinite;
+}
+.we-ip[data-id="4"] {
+    background: url(../img/p_r_prof.svg) no-repeat; 
+    background-size: cover;
+    animation: jumpper 5s infinite;
+}
+.we-ip[data-id="5"] {
+    background: url(../img/p_set.svg) no-repeat; 
+    background-size: cover;
+    transform: rotate(-10deg);
+    max-width: 110px;
+    max-height: 110px;
+    min-width: 110px;
+    min-height: 110px;
+}
+.we-wrap[data-id="1"] {
+    transform: rotate(10deg);
+}
+.we-wrap[data-id="2"] {
+    transform: rotate(20deg);
+}
+.we-wrap[data-id="3"] {
+    transform: rotate(-20deg);
+}
+.we-wrap[data-id="4"] {
+    transform: rotate(-20deg);
 }
 .we-slogan {
     position: absolute;
@@ -377,4 +435,15 @@ ul li {
 }
 #contacts {
     background: white;
+}
+@keyframes jumpper {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
