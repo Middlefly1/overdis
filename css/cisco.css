@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans.eot');
+    src: local('Cisco Sans'), local('CiscoSans'),
+        url('../fonts/cisco/CiscoSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-Oblique.eot');
+    src: local('Cisco Sans Oblique'), local('CiscoSans-Oblique'),
+        url('../fonts/cisco/CiscoSans-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-Oblique.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-Oblique.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-Heavy.eot');
+    src: local('Cisco Sans Heavy'), local('CiscoSans-Heavy'),
+        url('../fonts/cisco/CiscoSans-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-Heavy.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-Heavy.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-ExtraLightOblique.eot');
+    src: local('Cisco Sans ExtraLight Oblique'), local('CiscoSans-ExtraLightOblique'),
+        url('../fonts/cisco/CiscoSans-ExtraLightOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-ExtraLightOblique.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-ExtraLightOblique.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-ExtraLightOblique.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-HeavyOblique.eot');
+    src: local('Cisco Sans Heavy Oblique'), local('CiscoSans-HeavyOblique'),
+        url('../fonts/cisco/CiscoSans-HeavyOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-HeavyOblique.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-HeavyOblique.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-HeavyOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-ThinOblique.eot');
+    src: local('Cisco Sans Thin Oblique'), local('CiscoSans-ThinOblique'),
+        url('../fonts/cisco/CiscoSans-ThinOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-ThinOblique.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-ThinOblique.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-ThinOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-Bold.eot');
+    src: local('Cisco Sans Bold'), local('CiscoSans-Bold'),
+        url('../fonts/cisco/CiscoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-Bold.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-Bold.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-BoldOblique.eot');
+    src: local('Cisco Sans Bold Oblique'), local('CiscoSans-BoldOblique'),
+        url('../fonts/cisco/CiscoSans-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-BoldOblique.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-BoldOblique.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-ExtraLight.eot');
+    src: local('Cisco Sans ExtraLight'), local('CiscoSans-ExtraLight'),
+        url('../fonts/cisco/CiscoSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-ExtraLight.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-ExtraLight.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cisco Sans';
+    src: url('../fonts/cisco/CiscoSans-Thin.eot');
+    src: local('Cisco Sans Thin'), local('CiscoSans-Thin'),
+        url('../fonts/cisco/CiscoSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cisco/CiscoSans-Thin.woff2') format('woff2'),
+        url('../fonts/cisco/CiscoSans-Thin.woff') format('woff'),
+        url('../fonts/cisco/CiscoSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+

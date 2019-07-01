@@ -1,0 +1,375 @@
+@import url(../fonts/Circe/circe.css);
+@import url(../fonts/HelveticaNeueCyr/helv.css);
+
+/*** init ***/
+:root {
+    --green-vue: #00bc7e;
+    --black-vue: #2c3e50;
+    --text-color: #2c3e50;
+    --text-mute: #777777;
+    /* --rainy: #0057ff; */
+    --rainy: #315efb;
+    --carbone: #343b4c;
+    --alum: #eef2f4;
+    --light: #f8f9fa;
+}
+
+/*** custom styles ***/
+* {
+    font-family: 'HelveticaNeueCyr', 'Circe', sans-serif; 
+}
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    /* background: #f8f8f8; */
+    background: var(--alum);
+}
+h1,h2,h3,h4,h5,h6,a,b,strong,span,small {
+    font-weight: normal;
+}
+p {
+    font-weight: normal;
+    font-size: 14px;
+}
+span {
+    display: inline-block;
+}
+h1 {
+    font-weight: 300;
+    font-size: 52px;
+    letter-spacing: 1px;
+}
+ul li {
+    font-size: 14px;
+    line-height: 2.0;
+}
+.app {
+    overflow: hidden;
+    position: relative;
+}
+.app__header {
+    position: absolute;
+    width: 100%;
+}
+.app__shadow {
+    box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+.app__color__high {
+    display: inline-block;
+    color: var(--rainy);
+    font-weight: 600;
+    /* border-bottom: 1px solid var(--rainy); */
+}
+.navbar {
+    z-index: 9999;
+}
+.ov-free {
+    position: absolute;
+}
+.ov-relative {
+    position: relative;
+}
+.section {
+    overflow: hidden;
+}
+.ov-logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    transition: .4s;
+}
+.link-brief {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 32px;
+    background: var(--rainy);
+    color: var(--alum);
+    border: 0px solid var(--rainy);
+    padding: 7px 21px 6px 21px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+    transition: .2s;
+}
+.ov-logo:hover {
+    color: var(--green-vue);
+    transform: scale(1.04) rotate(-2.5deg);
+}
+.section h2 {
+    margin-bottom: 35px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: left;
+}
+.section h2:after {
+    content: '';
+    position: relative;
+    bottom: 13px;
+    width: 100px;
+    height: 7px;
+    display: block;
+    background: var(--rainy);
+    opacity: 0.2;
+}
+.we {
+    position: relative;
+    height: 100vh;
+}
+.we-left p {
+    font-size: 18px;
+    color: var(--text-mute);
+}
+.app__btn {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 32px;
+    padding: 7px 21px 6px 21px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 0px;
+    transition: .2s;
+}
+.we-left .want-site {
+    background: var(--carbone);
+    color: #fff;
+}
+.we-left .want-portfolio {
+    border: 1px solid var(--carbone);
+    background: none;
+    color: var(--carbone);
+    margin-left: 10px;
+
+}
+.we-left .want-site:hover,
+.link-brief:hover {
+    background: var(--alum);
+    color: var(--carbone);
+    text-decoration: none;
+}
+.nav-top .nav-item .nav-link {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--text-mute);
+    transition: .3s;
+    font-weight: 400;
+    /* letter-spacing: 1.5px;  */
+}
+.nav-top .nav-item .nav-link:hover {
+    /* color: var(--rainy); */
+    color: black;
+}
+.nav-top .nav-item .nav-link:after {
+    content: '';
+    position: relative;
+    bottom: 7px;
+    height: 3px; 
+    width: 100%;
+    background: var(--rainy);
+    opacity: 0.4;
+    display: block;
+    transform: scale(0);
+    transition: .2s;
+}
+.nav-top .nav-item .nav-link:hover:after {
+    transform: scale(1);
+}
+.social-media {
+    position: absolute;
+    bottom: 50px;
+    /* transform: translateY(-25%); */
+    z-index: 999;
+}
+.social-media ul li {
+    list-style: none;
+    margin-left: 15px;
+}
+.social-media ul li a {
+    display: inline-block;
+    /* background: #fff; */
+    /* box-shadow: 0 2px 8px rgba(0,0,0,.1); */
+    /* width: 40px;
+    height: 40px;
+    line-height: 47px; */
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--text-color);
+    transition: .3s;
+}
+.social-media ul li i {
+    font-size: 18px;
+}
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+.we-ip:before {
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 500px;
+    height: 450px;
+    background: url(../img/betterfly-lebanon-digital-marketing-agency.png) no-repeat;
+    background-size: cover;
+}
+.we-slogan {
+    position: absolute;
+    top: 47%;
+    left: 10px;
+    transform: translateY(47%) rotate(-90deg);
+    letter-spacing: 4px;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.we-prev {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 9;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+.we-prev span {
+    font-size: 118px;
+    font-weight: 900;
+    color: #fff;
+}
+.section-preview {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.1);
+    background: #fff;
+}
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+.flex-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+}
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+.overflow-hidden { overflow: hidden; }
+#created {
+    background: var(--alum);
+}
+.create-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    padding: 24px 28px 20px 28px;
+    width: 314px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.1);
+    background: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+    min-height: 275px;
+    max-height: 275px;
+}
+.create-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+.create-item:hover .create-icon {
+    transform: rotate(-15deg);
+}
+.create-item:hover .create-footer button {
+    display: block;
+}
+.create-object h3 {
+    margin-top: 12px;
+    font-size: 22px;
+    color: var(--text-color);
+}
+.create-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    transition: .3s;
+}
+.create-icon.smile {
+    background: url(https://image.flaticon.com/icons/svg/105/105636.svg);
+    background-size: cover;
+}
+.create-icon.bag {
+    background: url(https://image.flaticon.com/icons/svg/743/743131.svg);
+    background-size: cover;
+}
+.create-icon.web {
+    background: url(https://image.flaticon.com/icons/svg/149/149243.svg);
+    background-size: cover;
+}
+.create-content p {
+    margin-top: 15px;
+    color: #777777;
+    font-weight: 400;
+    font-size: 16px;
+}
+.create-footer {
+    overflow: hidden;
+}
+.create-footer .price {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-mute);
+}
+.create-footer .price span {
+    font-size: 24px;
+    color: var(--text-color);
+}
+.create-footer button {
+    display: none;
+    transition-delay: .3s;
+}
+#projects {
+    background: white;
+}
+.project-equal img {
+    width: 100%;
+    height: 290px;
+    border-radius: 16px;
+}
+#contacts {
+    background: white;
+}
