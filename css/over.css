@@ -144,9 +144,14 @@ ul li {
 }
 .we-left .want-site:hover,
 .link-brief:hover {
-    background: var(--alum);
+    /* background: var(--alum);
     color: var(--carbone);
+     */
     text-decoration: none;
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-4px);
 }
 .nav-top .nav-item .nav-link {
     font-size: 15px;
